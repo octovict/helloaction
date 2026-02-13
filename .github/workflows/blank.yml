@@ -36,4 +36,9 @@ jobs:
     steps:
       - name: Check variable
         run: echo ${{vars.HELLO}}
+  test2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: cat hello.md
       
